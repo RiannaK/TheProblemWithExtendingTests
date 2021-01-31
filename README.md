@@ -24,7 +24,7 @@ To validate that the code works as expected, we shall first check that we can re
 
 ![Early stopping](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/EarlyStopping.png)
 
-Our pictures tie up perfectly with Defazio's which is encouraging and the 5.0123% false positive rate is very reassuring that we are simulating this correctly. We get a false positive rate a little over 20% which seems reasonable. Yes - Defazio measures a false positive rate a little lower but he uses 10,000 times fewer simulations and it looks as though 6 breaches on day 1 were not counted in his analysis (I am not convinced that this was intentional on Defazio's part).
+Our pictures tie up perfectly with Defazio's which is encouraging and the 5.0123% false positive rate is very reassuring that we are simulating this correctly. We get a false positive rate a little over 20% which seems reasonable. Yes - Defazio measures a false positive rate a little lower ("*about an accumulated 17% false positive rate*") but he uses 10,000 times fewer simulations which will introduce materially more sampling error.
 
 ## Extending the Experiment to reach significance
 To show the effect on false positive rates by extending our experiment, we could progress our simulations as before, but that will tell us nothing new; we already know that false positive rates will increase and the previous analysis shows that very clearly. Besides, extending tests that have achieved very little significance is not very realistic!
