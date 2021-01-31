@@ -22,6 +22,8 @@ To validate that the code works as expected, we shall first check that we can re
 | Count | 50,123 | 225,365 |
 | Percentage | 5.0% | 22.5% |
 
+![Early stopping](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/EarlyStopping.png)
+
 Our pictures tie up perfectly with Defazio's which is encouraging and the 5.0123% false positive rate is very reassuring that we are simulating this correctly. We get a false positive rate a little over 20% which seems reasonable. Yes - Defazio measures a false positive rate a little lower but he uses 10,000 times fewer simulations and it looks as though 6 breaches on day 1 were not counted in his analysis (I am not convinced that this was intentional on Defazio's part).
 
 ## Extending the Experiment to reach significance
@@ -40,6 +42,8 @@ With those regimes defined, let's see how the false positive rate changes over t
 |90-95%  | 12,162 | 2,275 | 18%|
 |80-90%  | 35,865| 3174 | 9%|
 |Not significant  | 47,712 | 13 | ~0%|
+
+![Extending Tests](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/ExtendingTests.png)
 
 ## Closing remarks
 
