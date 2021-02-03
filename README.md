@@ -62,7 +62,7 @@ Below we have charted the distribution through time assuming a 95% confidence th
 ![Exact distribution](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/PercentileDistribution.png)
 
 
-For completeness, we can calculate the false positive rates as a function of time (across the table), given an achieved confidence at day 10 (down the table). Interestingly at day 15, the lowest false positive rate is 15.0% - three times higher than the naïve assumption.
+For completeness, we can calculate the false positive rates as a function of time (across the table), given an achieved confidence at day 10 (down the table). Interestingly, at day 15, the lowest false positive rate is 15.0% - three times higher than the naive assumption.
 
 |         | 11   	| 12	   | 13   	| 14   	| 15   	| 16   	| 17   	| 18   	| 19   	| 20    |
 |---------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
