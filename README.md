@@ -39,9 +39,9 @@ With those regimes defined, let's see how the false positive rate changes over t
 
 | Regime | Simulations | False Positives | FP Rate (%) |
 |--|--|--|--|
-|90-95%  | 24,630 | 4,826 | 20%|
-|80-90%  | 50,508 | 4,608 |  9%|
-|Not significant  | 49,671| 13 | ~0%|
+|90-95%  | 12,162 | 2,275 | 19%|
+|80-90%  | 35,865 | 3,174 |  9%|
+|Not significant  | 47,712| 13 | ~0%|
 
 ![Extending Tests](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/ExtendingTests.png)
 
