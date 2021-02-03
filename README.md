@@ -55,11 +55,24 @@ With those regimes defined, let's see how the false positive rate changes over t
 
 ## A mathematically precise analysis
 
-The simulations paint a very clear picture of what is going on but we can also derive an exact distribution of the evolution of the Z-score beyond the experiment cutoff time (see the notebook for details). Essentially, the Z-Score tends back towards zero (which makes sense given the long-term average should be zero after all), with a standard deviation that grows from zero to one.
+The simulations paint a very clear picture of what is going on but we can also derive an exact distribution of the evolution of the Z-score beyond the experiment cutoff time (see the [notebook](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/A%20Mathematical%20Derivation.ipynb) for details). Essentially, the Z-Score tends back towards zero (which makes sense given the long-term average should be zero after all), with a standard deviation that grows from zero to one.
 
 Below we have charted the distribution through time assuming a 95% confidence threshold for an experiment that reached 92.5%. We chose 92.5% here because it is the most faithful representation of the 90-95% regime plotted above. We have plotted the 5, 25, 50, 75, 95th percentiles to help show the distribution. Notice that the 95th percentile line is *well above* the threshold and the 75th percentile gets pretty close. This tells us that the false positive rate is approaching 25% consistent with our simulations above.
 
 ![Exact distribution](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/PercentileDistribution.png)
+
+
+For completeness, we can calculate the false positive rates as a function of time (across the table), given an achieved confidence at day 10 (down the table). Interesting at day 15, the lowest false positive rate is 15.0% - three times higher than the naïve assumption.
+
+|         | 11   	| 12	   | 13   	| 14   	| 15   	| 16   	| 17   	| 18   	| 19   	| 20    |
+|---------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| **95%**	| 40.0%	| 36.3%	| 33.7%	| 31.7%	| 30.1%	| 28.7%	| 27.5%	| 26.5%	| 25.6%	| 24.8% |
+| **94%**	| 29.5%	| 29.0%	| 27.9%	| 26.8%	| 25.8%	| 24.9%	| 24.0%	| 23.3%	| 22.6%	| 22.0% |
+| **93%**	| 21.5%	| 23.3%	| 23.3%	| 22.8%	| 22.3%	| 21.7%	| 21.2%	| 20.7%	| 20.2%	| 19.8% |
+| **92%**	| 15.6%	| 18.7%	| 19.5%	| 19.6%	| 19.4%	| 19.2%	| 18.8%	| 18.5%	| 18.2%	| 17.8% |
+| **91%**	| 11.2%	| 15.1%	| 16.4%	| 16.9%	| 17.0%	| 17.0%	| 16.8%	| 16.6%	| 16.4%	| 16.2% |
+| **90%**	|  8.0%	| 12.2%	| 13.9%	| 14.7%	| 15.0%	| 15.1%	| 15.1%	| 15.0%	| 14.9%	| 14.8% |
+
 
 ## Closing remarks
 
