@@ -59,6 +59,8 @@ The simulations paint a very clear picture of what is going on but we can also d
 
 Below we have charted the distribution through time assuming a 95% confidence threshold for an experiment that reached 92.5%. We chose 92.5% here because it is the most faithful representation of the 90-95% regime plotted above. We have plotted the 5, 25, 50, 75, 95th percentiles to help show the distribution. Notice that the 95th percentile line is *well above* the threshold and the 75th percentile gets pretty close. This tells us that the false positive rate is approaching 25% consistent with our simulations above.
 
+![Exact distribution](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/PercentileDistribution.png)
+
 ## Closing remarks
 
 These results are intuitive and further validate the arguments in Dominic's article. Where results are close but insignificant at the end of an experiment, the false positive rate can become materially higher by extending the test (c. 20%). As results become less significant, the false positive rate decreases and results that were found to be totally insignificant have very little chance of becoming significant in the near future. 
