@@ -9,6 +9,14 @@ Inspired by both of the above, this project analyses the impact on false positiv
 
 > 1.  If it was insignificant but close to 95% significance by its endpoint, they would extend it for more weeks to try and reach significance.
 
+## Follow along
+
+If you would like to follow along with this analysis, there are two self-contained Jupyter Notebooks that you can browse.
+ 1. A (Monte Carlo) simulation showing the results of many repeated experiments. Notebook: **Simulated Extensions.ipynb**
+ 2. An algebraic derivation of the effect, with exact distributions and p=values calculated. Notebook: **A Mathematical Derivation.ipynb**
+ 
+To get started, `pip install scipy seaborn`.
+
 ## Project setup
 
 We shall consider situations where the null hypothesis is in fact true (i.e. we shall create two random processes with equal conversion rates) and look at the number of instances of in which we obtain a Type I error (i.e. we incorrectly accept the alternative hypothesis). We shall set a confidence of 95% and use a two-sided hypothesis test. To validate Dominic's arguments via Monte Carlo simulation, we first simulate 1,000,000 experiments over the course of 10 days. We shall look at the subset of experiments that were close to achieving significance (Type I error) but didn't quite get there. We shall then continue to simulate this subset of experiments for a further 5 days and calculate the observed false positive rate.
@@ -44,6 +52,10 @@ With those regimes defined, let's see how the false positive rate changes over t
 |Not significant  | 47,712| 13 | ~0%|
 
 ![Extending Tests](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/images/ExtendingTests.png)
+
+## A mathematically precise analysis
+
+Todo...
 
 ## Closing remarks
 
