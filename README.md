@@ -12,8 +12,8 @@ Inspired by both of the above, this project analyses the impact on false positiv
 ## Follow along
 
 If you would like to follow along with this analysis, there are two self-contained Jupyter Notebooks that you can browse.
- 1. A (Monte Carlo) simulation showing the results of many repeated experiments. Notebook: **Simulated Extensions.ipynb**
- 2. An algebraic derivation of the effect, with exact distributions and p=values calculated. Notebook: **A Mathematical Derivation.ipynb**
+ 1. A (Monte Carlo) simulation showing the results of many repeated experiments. Notebook: **[Simulated Extensions.ipynb](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/Simulated%20Extensions.ipynb)**
+ 2. An algebraic derivation of the effect, with exact distributions and p=values calculated. Notebook: **[A Mathematical Derivation.ipynb](https://github.com/RiannaK/TheProblemWithExtendingTests/blob/main/A%20Mathematical%20Derivation.ipynb)**
  
 To get started, `pip install scipy seaborn`.
 
@@ -55,7 +55,9 @@ With those regimes defined, let's see how the false positive rate changes over t
 
 ## A mathematically precise analysis
 
-Todo...
+The simulations paint a very clear picture of what is going on but we can also derive an exact distribution of the evolution of the Z-score beyond the experiment cutoff time (see the notebook for details). Essentially, the Z-Score tends back towards zero (which makes sense given the long-term average should be zero after all), with a standard deviation that grows from zero to one.
+
+Below we have charted the distribution through time assuming a 95% confidence threshold for an experiment that reached 92.5%. We chose 92.5% here because it is the most faithful representation of the 90-95% regime plotted above. We have plotted the 5, 25, 50, 75, 95th percentiles to help show the distribution. Notice that the 95th percentile line is *well above* the threshold and the 75th percentile gets pretty close. This tells us that the false positive rate is approaching 25% consistent with our simulations above.
 
 ## Closing remarks
 
