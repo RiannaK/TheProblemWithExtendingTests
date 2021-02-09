@@ -39,8 +39,8 @@ To show the effect on false positive rates by extending our experiment, we could
 In Dominic's blog, he talks about extending tests where the result was "*insignificant **but close***".
 
 To capture the spirit of that statement, let's look at the subset of experiments that achieved a high level of significance (by random chance) but didn't reach the 95% significance required for us to accept the alternative hypothesis incorrectly. We can then simulate those for a further five days and look at the impact on false positive rates. This is much more realistic and insightful because no experimenter will persevere if, after 10 days, their experiment has proved to be completely insignificant. In contrast, an experimenter who has found a result that is on the brink of significance, might be tempted to persevere. We'll consider the following three regimes:
- 1. A significance level between 90-95% was achieved after 10 days.
- 2. A significance level between 80-90% was achieved after 10 days.
+ 1. A confidence level between 90-95% was achieved after 10 days.
+ 2. A confidence level between 80-90% was achieved after 10 days.
  3. The test was found to be completely insignificant after 10 days.
 
 With those regimes defined, let's see how the false positive rate changes over the next 5 days. For reference, a fair test should achieve a false positive rate of 5%
