@@ -1,0 +1,9 @@
+Category,Organic,Paid Social,Paid Search,Display,SEO,Referrals,Activated,Abandoned
+Organic,0,0.23,0.25,0.2,0.22,0.1,0,0
+Paid Social,0,0.15,0.1,0.08,0.12,0.06,0.15,0.34
+Paid Search,0,0.08,0.15,0.07,0.13,0.11,0.08,0.38
+Display,0,0.07,0.06,0.15,0.16,0.15,0.06,0.35
+SEO,0,0.1,0.07,0.06,0.15,0.08,0.05,0.49
+Referrals,0,0,0,0,0,0,0.45,0.55
+Activated,0,0,0,0,0,0,1,0
+Abandoned,0,0,0,0,0,0,0,1
